@@ -1,0 +1,35 @@
+# macOS, and the AppleDouble companions it writes on exFAT / FAT volumes
+.DS_Store
+._*
+
+# Unity: everything the editor regenerates
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.suo
+*.pdb
+*.mdb
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+
+# Built players: build with Tools/build.sh
+/[Bb]uilds/
+*.app
+
+# IDE folders
+.vs/
+.idea/
+.vscode/
+
+# Machine-specific settings for the scripts in Tools/
+/Tools/local.env
