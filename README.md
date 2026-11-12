@@ -14,8 +14,24 @@
 | ![Район сверху](Screenshots/03_aerial.png) | ![Бой в логове «Ржавых»](Screenshots/06_combat.png) |
 | ![Глайдер «Стриж»](Screenshots/08_driving.png) | ![Босс у башни «Гелиос»](Screenshots/09_boss.png) |
 
-Остальные кадры — в `Screenshots/`. Готовое приложение в репозиторий не входит: его собирает
-`bash Tools/build.sh` (macOS, Apple Silicon), результат появляется в `Builds/Neon Meridian.app`.
+Остальные кадры — в `Screenshots/`.
+
+## Скачать и запустить
+
+Готовая сборка для macOS (Apple Silicon, macOS 12 и новее) лежит на странице
+[Releases](https://github.com/barkovkd/neon-meridian/releases/latest): скачайте архив, распакуйте и
+запустите `Neon Meridian.app`.
+
+Приложение не подписано сертификатом разработчика Apple, поэтому при первом запуске macOS его
+заблокирует. Откройте «Системные настройки → Конфиденциальность и безопасность» и нажмите «Всё равно
+открыть» либо снимите карантин в Терминале:
+
+```bash
+xattr -dr com.apple.quarantine "Neon Meridian.app"
+```
+
+Собрать приложение из исходников можно скриптом `bash Tools/build.sh` — см. раздел «Как открыть и
+собрать».
 
 ## Что есть в игре
 
